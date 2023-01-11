@@ -1,5 +1,5 @@
 # Login page's API using ExpressJS and MongoDB
-This is the login page's API, the first version of the [frontend](https://github.com/vinicgoulart/loginfront) is already released!. <br />
+This is the login page's API, the first version of the [frontend](https://github.com/vinicgoulart/loginfront) is already released! <br />
 
 ## Paths
 To get all users, GET to => /user. <br />
