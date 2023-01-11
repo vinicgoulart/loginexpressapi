@@ -87,7 +87,7 @@ Router.post('/login', async (req, res) => {
 
 Router.delete('/user/:id', async(req, res) => {
     const query = { _id: req.params.id };
-    const token = req.headers['authorization'];
+    const token = req.headers.authorization;
 
     if(!token){
         res.status(403).json({ status: "Success", message: "Unauthorized" });
@@ -103,7 +103,7 @@ Router.delete('/user/:id', async(req, res) => {
 });
 
 Router.put('/user/:id', async(req, res) => {
-    const token = req.headers['authorization'];
+    const token = req.headers.authorization;
     if(!token){
         res.status(403).json({ status: "Success", message: "Unauthorized" });
         return;

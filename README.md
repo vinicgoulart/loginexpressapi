@@ -1,5 +1,5 @@
 # Login page's API using ExpressJS and MongoDB
-This is the login page's API, frontend will soon be released. <br />
+This is the login page's API, the first version of the [frontend](https://github.com/vinicgoulart/loginfront) is already released!. <br />
 
 ## Paths
 To get all users, GET to => /user. <br />
@@ -13,3 +13,5 @@ To login using an account POST to => /login (must contain email and password in 
 To update a user, PUT to => /user/id (authorization header is required, only name can be updated). <br />
 
 To delete a user, DELETE to => /user/id (authorization header is required). <br />
+
+

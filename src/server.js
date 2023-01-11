@@ -4,10 +4,13 @@ const app = express();
 const mongoose = require('mongoose');
 const user = require('../routes/user');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
+
+app.use(cors({ origin: 'http://localhost:3000' }));
+
+app.use(cookieParser());
 
 app.use(express.json());
-
-app.use(cors());
 
 mongoose.set('strictQuery', true);
 
